@@ -15,7 +15,7 @@ if memo_type == 1
   puts "Ctrl + Dで保存"
   memo = STDIN.read
   
-  CSV.open("#{file_name}.csv","a") do |csv|
+  CSV.open("#{file_name}.csv","") do |csv|
     csv.puts ["{memo}"]
   end
   
